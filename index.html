@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- The reset css. -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <title>GIF-TASTIC!!</title>
+    <!-- Added a link to Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Then my style sheet. -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<!-- In this assignment, you'll use the GIPHY API to make a dynamic web page that populates with gifs of your choice. To finish this task, you must call the GIPHY API and use JavaScript and jQuery to change the HTML of your site.
+Hit the GIPHY API.
+
+Fool around with the GIPHY API. Giphy API.
+Be sure to read about these GIPHY parameters (hint, hint):
+q, limit, rating
+
+Like many APIs, GIPHY requires developers to use a key to access their API data. To use the GIPHY API, you'll need a GIPHY account (don't worry, it's free!) and then obtain an API Key by creating an app.
+Make sure you switch the protocol in the query URL from http to https, or the app may not work properly when deployed to Github Pages. -->
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" id="buttons">Space for Buttons</div>
+    </div></div>
+    <!-- Full space for buttons -->
+    <div class="container">
+        <div class="row">
+        <div class="col-9" id="images"></div>
+    <!-- Two thirds of the page for gifs (maybe 3/4), then rest for the search -->
+        <form class="col-3" id="search-form">
+            <label for="search-input">Add an animal.</label>
+            <input type="text" id="search-input"><br>  
+            <input id="add-search" type="submit" value="Add"></input>
+        </form>
+    </div></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
